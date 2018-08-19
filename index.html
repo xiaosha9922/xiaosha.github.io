@@ -165,11 +165,15 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a  href="/archives/java/">java</a></li>
+                            <li><a  href="/categories/java/">java</a></li>
                         
-                            <li><a  href="/archives/elasticsearch/">elasticsearch</a></li>
+                            <li><a  href="/categories/elasticsearch/">elasticsearch</a></li>
                         
-                            <li><a  href="/archives/ftp/">ftp</a></li>
+                            <li><a  href="/categories/ftp/">ftp</a></li>
+                        
+                            <li><a  href="/categories/hexo/">hexo</a></li>
+                        
+                            <li><a  href="/categories/linux/">linux</a></li>
                         
                         </ul>
                     </nav>
@@ -238,11 +242,15 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/archives/java/">java</a></li>
+                    <li><a href="/categories/java/">java</a></li>
                 
-                    <li><a href="/archives/elasticsearch/">elasticsearch</a></li>
+                    <li><a href="/categories/elasticsearch/">elasticsearch</a></li>
                 
-                    <li><a href="/archives/ftp/">ftp</a></li>
+                    <li><a href="/categories/ftp/">ftp</a></li>
+                
+                    <li><a href="/categories/hexo/">hexo</a></li>
+                
+                    <li><a href="/categories/linux/">linux</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -263,6 +271,69 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-ftp/ftp1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/08/18/ftp/ftp1/" class="article-date">
+      <time datetime="2018-08-18T15:46:13.147Z" itemprop="datePublished">2018-08-18</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/08/18/ftp/ftp1/">java 连接ftp客户端 切换目录失败（linux）（原因:ftp连接用户主目录错误）</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h2><h3 id="1，修改用户ftp根目录。"><a href="#1，修改用户ftp根目录。" class="headerlink" title="1，修改用户ftp根目录。"></a>1，修改用户ftp根目录。</h3><p>a: /home/etc 目录下找到文件 passwd<br>b: 搜索用户如：test  结果如下：test:x:1005:1005::/home/teamwork/data:/bin/bash 修改根目录</p>
+<h3 id="2，锁定用户主目录。"><a href="#2，锁定用户主目录。" class="headerlink" title="2，锁定用户主目录。"></a>2，锁定用户主目录。</h3><p>a：/home/etc/vsftpd 目录下找到文件 vsftpd.conf<br>b: 设置chroot_local_user=YES allow_writeable_chroot=YES</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/ftp/">ftp</a>
+    </div>
+
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-elasticsearch/elasticsearch" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -281,7 +352,7 @@
         
   
     <h1 itemprop="name">
-      <a  class="article-title" href="/2018/08/13/elasticsearch/elasticsearch/">Hello World</a>
+      <a  class="article-title" href="/2018/08/13/elasticsearch/elasticsearch/">使用hexo+github搭建免费个人博客详细教程</a>
     </h1>
   
 
@@ -292,7 +363,11 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+        <h3 id="1-1-准备工作"><a href="#1-1-准备工作" class="headerlink" title="1.1 准备工作"></a>1.1 准备工作</h3><p>在开始一切之前，你必须已经：</p>
+<p>有一个github账号，没有的话去注册一个；<br>安装了node.js、npm，并了解相关基础知识；<br>安装了git for windows（或者其它git客户端）</p>
+<h3 id="1-2-准备工作"><a href="#1-2-准备工作" class="headerlink" title="1.2 准备工作"></a>1.2 准备工作</h3><p>在开始一切之前，你必须已经：</p>
+<p>有一个github账号，没有的话去注册一个；<br>安装了node.js、npm，并了解相关基础知识；<br>安装了git for windows（或者其它git客户端）</p>
+<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -309,15 +384,11 @@
       
       
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/elasticsearch/">elasticsearch</a>
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
     </div>
 
 
       
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/22222/">22222</a></li></ul>
-    </div>
-
       
       <div class="clearfix"></div>
     </div>
@@ -580,7 +651,7 @@
 
     <script>
         $(document).ready(function() {
-            var backgroundnum = 2;
+            var backgroundnum = 1;
             var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
             $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
             $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
